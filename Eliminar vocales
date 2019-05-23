@@ -1,0 +1,22 @@
+public class HelloWorld{
+
+     public static void main(String []args){
+        String [] n={"a","e","i","o","u","A","E","I","O","U"};
+        String pal="Anyone";
+        String [] pv= new String[pal.length()];
+        for(int j=0; j<pal.length(); j++){
+            String aux=pal.substring(j,j+1);
+            pv [j]=aux;
+        }
+        for(int h=0;h<n.length;h++){
+            for (int g=0;g <pal.length();g++){
+            int z=pv [g].compareTo (n [h]);
+            if (z==0){
+                pv [g]="";
+            }
+            }
+        }
+        for(int i=0; i <pal.length();i++)
+         System.out.print(pv[i]);
+    }
+}
