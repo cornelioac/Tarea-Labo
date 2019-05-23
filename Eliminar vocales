@@ -1,8 +1,11 @@
+import java.util.Scanner;
 public class HelloWorld{
-
      public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        String pal;
+        System.out.print("Introduzca una palabra ");       
+        pal = sc.nextLine(); 
         String [] n={"a","e","i","o","u","A","E","I","O","U"};
-        String pal="Anyone";
         String [] pv= new String[pal.length()];
         for(int j=0; j<pal.length(); j++){
             String aux=pal.substring(j,j+1);
