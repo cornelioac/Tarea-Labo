@@ -4,7 +4,7 @@ public class Cifrado{
      public static void main(String []args){
         Scanner teclado = new Scanner (System.in);
 		String pal;
-		System.out.println("Introduzca una palabra");
+		System.out.println("Introduzca la palabra a cifrar: ");
 		pal = teclado.nextLine();
 		String aux = "";
 		char x = ' ';
